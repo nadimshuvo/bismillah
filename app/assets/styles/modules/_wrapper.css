@@ -5,9 +5,30 @@
   margin-left: auto;
   margin-right: auto;
 
-  &--narrow {
+  &__narrow {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &__head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+  }
+
+  &__choose-service {
+    max-width: 1250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__ticket {
+    margin: auto;
+    display: grid;
   }
 }

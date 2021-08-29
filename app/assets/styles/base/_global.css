@@ -3,7 +3,7 @@ html {
     height: 100%;
   }
   
-  body {
+body {
     margin: 0;
     height: 100%;
     font-family: 'ChunkFive', sans-serif;
@@ -15,15 +15,21 @@ html {
     
   }
 
-  main {
+main {
       display: block;
   }
   
-  img {
+img {
     max-width: 100%;
     height: auto;
   }
 
-    *, *::before, *::after {
+*, *::before, *::after {
     box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: Mont;
+  font-style: normal;
 }
