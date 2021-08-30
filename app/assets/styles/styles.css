@@ -2,9 +2,6 @@
 @import 'base/_global.css';
 @import 'base/_mixins.css';
 @import 'modules/_wrapper.css';
-@import 'modules/_btn.css';
 @import 'modules/_main-home.css';
 @import 'modules/_header.css';
-@import 'modules/_choose-service.css';
-@import 'modules/_ticket.css';
-@import 'modules/_footer.css'
+@import 'modules/_btn.css';

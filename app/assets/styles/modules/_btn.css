@@ -1,0 +1,22 @@
+.btn {
+    width: 191.14px;
+    height: 50px;
+    background: #FFD400;
+    border-radius: 3px;
+    display: grid;
+
+    &__text {
+        margin: auto;
+        font-family: HelveticaNeue;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #181840;
+    }
+}
+
+.btn:hover {
+    background: #FFB800;
+    cursor: pointer;
+}
