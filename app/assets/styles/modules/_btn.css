@@ -10,10 +10,25 @@
         font-family: HelveticaNeue;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
-        line-height: 21px;
+        font-size: 20px;
+        line-height: 24px;
         color: #181840;
     }
+
+    &__service {
+        display: grid;
+        width: 323px;
+        height: 58px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        transition: .3s ease-out;
+    }
+}
+
+.btn__service:hover {
+    background: #FFB800;
+    cursor: pointer;
 }
 
 .btn:hover {

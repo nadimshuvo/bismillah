@@ -1,0 +1,26 @@
+.choose-service {
+    display: flex;
+    gap: 101px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__btn {
+        display: flex;
+        gap: 30px;
+    }
+
+}    
+
+.choose-service__box > h1 {
+    font-family: Mont;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;    
+    text-align: center;    
+    color: #12122E;    
+}
