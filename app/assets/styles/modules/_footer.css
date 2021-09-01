@@ -1,0 +1,112 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    &__company {
+        max-width: 246px;
+
+        &-title {
+            padding-left: 10px;
+            font-family: Mont;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;            
+            color: #161344;            
+        }
+
+        &-logo {
+            max-width: 90%;
+        }
+    }
+
+    &__products {
+        max-width: 260px;
+
+        &-title {
+            font-family: Mont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;            
+            color: #161344;
+        }
+
+        &-links {
+            font-family: Mont;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            color: #313131;
+        }
+    }
+
+    &__marvelution {
+
+        &-title {
+        font-family: Mont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;            
+        color: #161344;
+        }
+
+        &-links {
+            font-family: Mont;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            color: #313131;
+        }
+    }
+
+    &__contact {
+
+        &-title {
+            font-family: Mont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;            
+            color: #161344;
+        }
+
+        &-address {
+            font-family: Mont;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            color: #313131;
+        }
+    }
+}
+
+.footer__links {
+    display: grid;
+
+    &-A {
+        margin: auto;
+        
+    }
+}
+
+.footer__links-A > a {
+        font-family: Mont;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #313131;
+}
+
+.footer__links-A > a:nth-child(-n+3) {
+    border-right: 1px solid #C4C4C4;
+    padding-right: 12px;
+}
