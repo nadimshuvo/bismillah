@@ -1,10 +1,15 @@
-header {
-  position: absolute;
-  width: 100%;
-  
-}
-
 .header {
+  position: fixed;
+  width: 100%;
+  transition: .3s ease-out;
+  scroll-behavior: smooth;
+
+  &--sticky {
+    background-color: #fff;
+    box-shadow: 0 0 2px 2px rgb(0 0 0 / 4%);
+    
+  }
+
     &__container {
         display: flex;
     }
@@ -17,6 +22,10 @@ header {
     font-size: 24px;
     line-height: 130%;
     color: #FFFFFF;
+
+    .header--sticky & {
+      color: black;
+    }
     }
 
     &__s-title {
