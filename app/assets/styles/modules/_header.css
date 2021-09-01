@@ -1,20 +1,31 @@
 .header {
+
+  @mixin atLarge {
   position: fixed;
   width: 100%;
   transition: .3s ease-out;
   scroll-behavior: smooth;
+  }
 
   &--sticky {
+
+    @mixin atLarge {
     background-color: #fff;
     box-shadow: 0 0 2px 2px rgb(0 0 0 / 4%);
+    }
     
   }
 
     &__container {
+
+      @mixin atLarge {
         display: flex;
+      }
     }
 
     &__title {
+
+      @mixin atLarge {
     padding-left: 25px;
     font-family: Mont;
     font-style: normal;
@@ -22,18 +33,25 @@
     font-size: 24px;
     line-height: 130%;
     color: #FFFFFF;
+      }
 
     .header--sticky & {
+
+      @mixin atLarge {
       color: black;
+      }
     }
     }
 
     &__s-title {
+
+      @mixin atLarge {
     font-family: Mont;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 130%;
     color: #FFD400;
+      }
     }
 }
