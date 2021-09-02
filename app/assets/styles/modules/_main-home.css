@@ -1,4 +1,6 @@
 .home {
+
+    @mixin atLarge {
     background: linear-gradient(180deg, #161639 0%, #11112B 100%);
     height: 700px;
     display: flex;
@@ -8,18 +10,27 @@
     flex-wrap: wrap;
     display: grid;
     grid-template-columns: 1fr;
+    }
 
     &-hero {
+
+        @mixin atLarge {
      grid-column: 1;
      grid-row: 1;
+        }
     }
 
    &-hero__image {
+
+    @mixin atLarge {
         width: 90%;
         padding-left: 33px;
+    }
    }
 
    &-hero__title {
+
+    @mixin atLarge {
     margin: 0;
     padding: 0;
     color: #FFD400;
@@ -29,9 +40,12 @@
     font-size: 57px;
     line-height: 150%;
     text-align: center;
+    }
    }
 
    &-hero__description {
+
+    @mixin atLarge {
     margin: 0;
     padding-left: 196px;
     max-width: 960px;
@@ -41,10 +55,13 @@
     font-weight: bold;
     font-size: 29px;
     line-height: 37px;
+    }
    }
 }
 
 pre {
+
+    @mixin atLarge {
     margin: 0;
     padding-left: 327px;
     max-width: 960px;
@@ -54,5 +71,6 @@ pre {
     font-weight: bold;
     font-size: 29px;
     line-height: 37px;
+    }
 }
 

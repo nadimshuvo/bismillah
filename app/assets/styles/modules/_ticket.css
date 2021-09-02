@@ -1,13 +1,21 @@
 .ticket {
+
+    @mixin atLarge {
     background: url('/app/assets/images/blue-bg.svg')
     ;
     padding: 80px 0 132px 0;
+    }
 
     &__logo {
+
+        @mixin atLarge {
       margin: auto;
+        }
     }
 
     &__title {
+
+        @mixin atLarge {
         font-family: Mont;
         font-style: normal;
         font-weight: 800;
@@ -15,14 +23,18 @@
         line-height: 48px;
         text-align: center;        
         color: #FFFFFF;
+        }
     }
 
     &__btn {
+
+        @mixin atLarge {
         margin-top: 60px;
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         justify-content: space-between;
+        }
     }
 }
