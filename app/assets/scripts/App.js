@@ -1,7 +1,9 @@
 import '../styles/styles.css'
 import StickyHeader from './modules/StickyHeader'
+import MobileMenu from './modules/MobileMenu'
 
-let stickyHeader = new StickyHeader()
+new StickyHeader()
+new MobileMenu()
 
 if(module.hot){
     module.hot.accept()
