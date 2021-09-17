@@ -1,18 +1,19 @@
 .btn {
-    opacity: 0;
-    position: absolute;
+    width: 117.14px;
+    height: 30px;
+    background: #FFD400;
+    border-radius: 3px;
+    display: grid;
+    
 
     @mixin atSmall {
         opacity: 1;
         position: relative;
     width: 191.14px;
     height: 50px;
-    background: #FFD400;
-    border-radius: 3px;
-    display: grid;
     }
 
-    &-t {
+    &-try {
         opacity: 0;
         position: absolute;
 
@@ -65,18 +66,23 @@
 }
 
 .btn__ticket {
-
-    @mixin atSmall {
     cursor: pointer;
     display: grid;
+    width: 117.14px;
+    height: 30px;
+    border: 1px solid #FFD400;
+    border-radius: 14px;
+    box-sizing: border-box;
+
+    @mixin atSmall {    
     width: 191.14px;
     height: 50px;
-    background: none;
-    border: 1px solid #FFD400;
-    box-sizing: border-box;
-    border-radius: 3px;
+    background: none; 
     transition: .3s linear;
+    border-radius: 3px;
     }
+
+
 }
 
 .btn__ticket:hover {

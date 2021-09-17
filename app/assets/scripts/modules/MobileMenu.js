@@ -8,7 +8,8 @@ class MobileMenu {
       this.menuIcon.addEventListener("click", () => this.toggleTheMenu())
     }
   
-    toggleTheMenu() {           
+    toggleTheMenu() {    
+        console.log("Button clicked")       
       this.menuIcon.classList.toggle("header__menu-icon--close-x")
     }
   }
