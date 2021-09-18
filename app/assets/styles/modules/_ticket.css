@@ -4,11 +4,12 @@
     @mixin atLarge {
     
     }
-
+    
     &__logo {
+        max-width: 15%;
         margin: auto;
         @mixin atLarge {
-      
+        max-width: 100%;
         }
     }
 

@@ -8,31 +8,38 @@
     }
 
     @mixin atMedium {
+    margin-top: 51px;
     display: flex;
     justify-content: space-between;
     }
 
     &__company {
+        @media (min-width: 300px) and (max-width: 768px) {
+            display: grid;
+            margin-top: 50px;
+        }
 
         @mixin atMedium {
         max-width: 246px;
         }
 
         &-title {
-            
-
-            @mixin atMedium {
-            padding-left: 10px;
+            margin: auto;
             font-family: Mont;
             font-style: normal;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 19px;
             line-height: 24px;            
             color: #161344;
+
+            @mixin atMedium {
+            padding-left: 10px;            
+            font-size: 20px;
             }         
         }
 
         &-logo {
+            margin: auto;
             @mixin atMedium {
             max-width: 90%;
             }
@@ -40,100 +47,138 @@
     }
 
     &__products {
+        @media (min-width: 300px) and (max-width: 768px) {
+            display: grid;
+        }
 
-        @mixin atMedium {
+        @mixin atLarge {
         max-width: 260px;
         }
 
         &-title {
-
-            @mixin atSmall {
-                font-family: Mont;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 10px;
-            line-height: 24px;
-            text-transform: uppercase;            
-            color: #161344;
-            }
-                
-
-            @mixin atMedium {
+            margin: auto;
             font-family: Mont;
             font-style: normal;
             font-weight: bold;
+            font-size: 27px;
+            line-height: 75px;
+            text-transform: uppercase;            
+            color: #161344;          
+                
+            @mixin atMedium {
             font-size: 20px;
             line-height: 24px;
-            text-transform: uppercase;            
-            color: #161344;
             }
         }
 
         &-links {
-
-            @mixin atMedium {
+            margin: auto;
             font-family: Mont;
             font-style: normal;
             font-weight: 600;
+            font-size: 14px;
+            line-height: 0px;
+            color: #313131;
+
+            @mixin atMedium {
             font-size: 16px;
             line-height: 21px;
-            color: #313131;
             }
         }
     }
 
     &__marvelution {
+        @media (min-width: 300px) and (max-width: 768px) {
+            display: grid;
+        }
 
         &-title {
-
-            @mixin atMedium {
+        margin: auto;
         font-family: Mont;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 27px;
+        line-height: 75px;
         text-transform: uppercase;            
         color: #161344;
-            }
+
+        @mixin atMedium {
+        font-size: 20px;
+        line-height: 21px;
+        }
         }
 
         &-links {
-
-            @mixin atMedium {
+            margin: auto;
             font-family: Mont;
             font-style: normal;
             font-weight: 600;
-            font-size: 16px;
-            line-height: 21px;
+            font-size: 14px;
+            line-height: 0px;
             color: #313131;
+
+            @mixin atMedium {
+            font-size: 16px;
+            line-height: 21px;           
             }
+        }
+
+        & > img {
+            margin: auto;
         }
     }
 
     &__contact {
-
+        @media (min-width: 300px) and (max-width: 768px) {
+            display: grid;
+        }
         &-title {
-
-            @mixin atMedium {
+            margin: auto;
             font-family: Mont;
             font-style: normal;
             font-weight: bold;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 27px;
+            line-height: 75px;
             text-transform: uppercase;            
             color: #161344;
+
+            @mixin atMedium {            
+            font-size: 20px;
+            line-height: 21px;         
             }
         }
 
         &-address {
-
-            @mixin atMedium {
+            margin: auto;
             font-family: Mont;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 16px;
-            line-height: 21px;
+            line-height: 16px;
             color: #313131;
+
+            @mixin atMedium {
+            font-size: 16px;            
+            }
+
+            &-tel {
+                margin: auto;
+                font-family: Mont;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                color: #313131;
+            }
+
+            &-email {
+                margin: auto;
+                font-family: Mont;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #313131;
             }
         }
     }
@@ -158,14 +203,16 @@
 }
 
 .footer__links-A > a {
-
-    @mixin atMedium {
         font-family: Mont;
         font-style: normal;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 20px;
         color: #313131;
+
+    @mixin atMedium {
+        font-size: 15px;
+        line-height: 20px;        
     }
 }
 

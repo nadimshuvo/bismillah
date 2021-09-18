@@ -9,6 +9,7 @@
   }
 
   &__narrow {
+    display: grid;
 
     @mixin atLarge {
     max-width: 600px;

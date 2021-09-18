@@ -88,8 +88,15 @@
     }
 
     &_logo {
+      max-width: 8%;
+      margin: 5px 5px;
       float: right;
       overflow: auto;
+      @mixin atMedium {
+        width: auto;
+        margin: 0;
+        float: left;
+      }
     }
 
     
