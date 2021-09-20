@@ -8,6 +8,16 @@
     &__logo {
         max-width: 15%;
         margin: auto;
+        animation: mymove3 7s infinite;
+
+        @keyframes mymove3 {
+            0%   {transform: scale(1) rotate(-5deg);}
+            25%  {transform: scale(1.1) rotate(5deg);}
+            50%  {transform: scale(1) rotate(-5deg);}
+            75% {transform: scale(1.1) rotate(5deg);}
+            100% {transform: scale(1) rotate(-5deg);}
+          }
+
         @mixin atLarge {
         max-width: 100%;
         }
