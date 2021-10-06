@@ -1,6 +1,5 @@
 .mobile-view {
     background: linear-gradient(180deg, #161639 0%, #11112B 100%);
-
     @mixin atLarge {
         background: none;
     }
